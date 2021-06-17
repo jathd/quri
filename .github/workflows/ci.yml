@@ -19,7 +19,7 @@ jobs:
         env:
           LISP: ${{ matrix.lisp }}
         run: |
-          curl -L https://raw.githubusercontent.com/roswell/roswell/master/scripts/install-for-ci.sh | sh
+          curl -L https://raw.githubusercontent.com/roswell/roswell/release/scripts/install-for-ci.sh | sh
       - name: Install Roswell (Windows)
         if: matrix.os == 'windows-latest'
         env:
